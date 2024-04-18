@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleFilter } from '../store/filterSlice';
 import tabs from "../Data/filter-data";
-import { Drawer, Button } from 'rsuite';
+import { Drawer } from 'rsuite';
 import ApplyFilter from './applyFilter';
-import { toggleDrawer, setDrawerOpen } from '../store/drawerSlice';
+import {  setDrawerOpen } from '../store/drawerSlice';
 import seeting_icon from "../assets/icons8-slider-30.png"
 const FilterBar = () => {
   const dispatch = useDispatch();
@@ -41,7 +40,7 @@ const FilterBar = () => {
         ))}
       </div>
       <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} placement="bottom" size="full">
-  <div className="max-w-md mx-auto">
+  <div className="top-30 z-10 max-w-md mx-auto">
    
     <Drawer.Body>
       <ApplyFilter />

@@ -1,5 +1,5 @@
 import VideoInfoIcon from '../assets/icons8-next-52.png';
-
+import { MONEY } from '../Data/Constats_words';
 const Scrolled_Header = () => {
   return (
     <div className="sticky top-0 z-10 max-w-md mx-auto  w-full bg-[#FFFF00]" style={{ height: '10vh' }}> 
@@ -9,7 +9,7 @@ const Scrolled_Header = () => {
           <img src={VideoInfoIcon} alt="Video info" className="h-6 w-6" /> 
         </button>
         <button className="bg-[#7950F2] text-white font-bold py-2 px-4 rounded-full flex items-center">
-          ₹15
+          {MONEY}
           <span className="bg-white text-[#7950F2] h-8 w-8 flex items-center justify-center ml-2 rounded-full">+</span>
         </button>
       </div>

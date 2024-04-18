@@ -1,4 +1,4 @@
-
+import { MONEY } from '../Data/Constats_words';
 import Ludo from '../assets/Ludo_img.png';
 import VideoInfoIcon from '../assets/icons8-next-50.png'
 const HeaderBackground = () => {
@@ -10,7 +10,7 @@ const HeaderBackground = () => {
         <img src={VideoInfoIcon} alt="Video info" className="h-6 w-6" /> 
       </button>
       <button className="bg-white text-[#7950F2] font-bold py-2 px-4 rounded-full flex items-center">
-        ₹15
+        {MONEY}
         <span className="bg-[#7950F2] text-white h-8 w-8 flex items-center justify-center ml-2 rounded-full">+</span>
       </button>
       </div>

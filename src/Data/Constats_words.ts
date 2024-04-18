@@ -1,0 +1,9 @@
+export const TOURNAMENT = "Tournament";
+export const MONEY = "₹15";
+export const TERMS = "TERMS & CONDITIONS";
+export const RANK = "Rank";
+export const PLAYER = "PLAYERS";
+export const PRIZE = "PRIZE";
+export const ENTRY = "ENTRY";
+export const QUICK = "QUICK";
+export const WINNERS = "WINNERS";

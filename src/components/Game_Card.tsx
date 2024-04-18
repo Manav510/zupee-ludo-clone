@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Timer from './Timer';
-
+import { TERMS,RANK,PLAYER,PRIZE,ENTRY,QUICK,WINNERS } from '../Data/Constats_words';
 import mul_people from "../assets/icons8-people-50.png"
 import quick_icon from "../assets/icons8-quick-mode-on-80.png"
 const Game_Card = ({
@@ -22,15 +22,15 @@ const Game_Card = ({
                 <span className="flex-initial">
                 <img src={mul_people} alt="Multiple People" className="inline-block h-6 w-6 mr-2" />
                 {participants}+</span>
-                <span className="flex-grow text-center font-bold">{players} PLAYERS | {winners} WINNERS</span>
+                <span className="flex-grow text-center font-bold">{players} {PLAYER} | {winners} {WINNERS}</span>
             </div>
             <div className="bg-white rounded-lg shadow-md p-4 mb-4">
                 <div className="flex justify-between items-baseline px-6">
-                    <div className="text-gray-600 text-sm">PRIZE</div>
+                    <div className="text-gray-600 text-sm">{PRIZE}</div>
                     {gameType && <div className='font-bold'>
-                    <img src={quick_icon} alt="Quick Icon" className="inline-block h-6 w-6 mr-2" />
-                        QUICK</div>}
-                    <div className="text-gray-600 text-sm">ENTRY</div>
+                    <img src={quick_icon} alt="Quick Icon" className="italic inline-block h-6 w-6 mr-2 " />
+                        {QUICK}</div>}
+                    <div className="text-gray-600 text-sm">{ENTRY}</div>
                 </div>
                 <div className="flex justify-between items-end">
                     <button type="button" className="text-xl font-bold text-gray-800 bg-gray-300 rounded-full px-6 py-2" onClick={() => setIsExpanded(!isExpanded)}>
@@ -48,14 +48,14 @@ const Game_Card = ({
                         <div className="flex flex-wrap justify-center">
                             {ranks.map((rank, index) => (
                                 <div key={index} className="w-1/2">
-                                    <span>Rank {index + 1}: ₹{rank.toFixed(1)}</span>
+                                    <span>{RANK} {index + 1}: ₹{rank.toFixed(1)}</span>
                                 </div>
                             ))}
                         </div>
                         <hr className="my-2 border-dotted border-gray-300 mx-auto w-full" />
                         <span>{details}</span>
                         <hr className="my-2 border-dotted border-gray-300 mx-auto w-full" />
-                        <span className='text-purple-700'>TERMS & CONDITIONS</span>
+                        <span className='text-purple-700'>{TERMS}</span>
                     </div>
                 )}
             </div>

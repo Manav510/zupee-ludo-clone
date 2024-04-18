@@ -1,5 +1,4 @@
 import Game_Card from './Game_Card'
-import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectFilteredGames } from '../store/selector';
 const Game_List = () => {
