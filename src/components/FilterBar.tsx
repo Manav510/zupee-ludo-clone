@@ -24,7 +24,7 @@ const FilterBar = () => {
           onClick={handleAllClick}
           className={`text-sm px-4 py-2 mr-2 flex-none rounded-full ${drawerOpen ? 'bg-yellow-400' : 'bg-gray-200'}`}
         >
-        <img src={seeting_icon} alt="Multiple People" className="inline-block h-6 w-6 mr-2" />
+        <img src={seeting_icon} alt="SETTING ICONS" className="inline-block h-6 w-6 mr-2" />
 
         </button>
         {tabs.map(tab => (

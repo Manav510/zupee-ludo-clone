@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { toggleDrawer, setDrawerOpen } from '../store/drawerSlice';
+import {  setDrawerOpen } from '../store/drawerSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveFilters } from '../store/filterSlice';
 import tabs from "../Data/filter-data";
