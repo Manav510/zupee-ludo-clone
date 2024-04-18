@@ -7,3 +7,4 @@ export const PRIZE = "PRIZE";
 export const ENTRY = "ENTRY";
 export const QUICK = "QUICK";
 export const WINNERS = "WINNERS";
+export const LUDO = "Ludo Supreme";
